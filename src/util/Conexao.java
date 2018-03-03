@@ -1,7 +1,5 @@
 package util;
 
-import javax.swing.JOptionPane;
-
 import org.lightcouch.CouchDbClient;
 import org.lightcouch.CouchDbException;
 import org.lightcouch.CouchDbProperties;

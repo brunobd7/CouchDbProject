@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.ArrayList;
+
 import org.lightcouch.CouchDbClient;
 
 import excecoes.DadoInexistenteException;
@@ -49,8 +51,9 @@ public abstract class GenericDao<T, ID> {
 	/**
 	 * Metodo que sera responsavel por relizar a busca de todos os dados de um
 	 * determinado tipo T
-	 
-	abstract List<T> buscarTodos() throws DadoInexistenteException;
+	 */
+	
+	abstract ArrayList<T> buscarTodos() throws DadoInexistenteException;
 
 	/**
 	 * Metodo que verifica no banco a existencia de um documento com o ID
